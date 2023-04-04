@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "description": "server",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npx husky install"
+  },
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morajlab-aprp/server.git"
+  },
+  "author": {
+    "name": "Morteza Jamali",
+    "email": "mortezajamali4241@gmail.com",
+    "url": "https://moraj.ir"
+  },
+  "bugs": {
+    "url": "https://github.com/morajlab-aprp/server/issues"
+  },
+  "homepage": "https://github.com/morajlab-aprp/server#readme",
+  "lint-staged": {
+    "**/*": "prettier -w -u"
+  }
+}
