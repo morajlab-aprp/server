@@ -2,9 +2,11 @@
   "name": "server",
   "description": "server",
   "version": "0.0.0",
+  "main": "./packages/index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npx husky install"
+    "postinstall": "npx husky install",
+    "start": "node ./packages/index.js"
   },
   "private": true,
   "devDependencies": {
@@ -29,5 +31,8 @@
   "homepage": "https://github.com/morajlab-aprp/server#readme",
   "lint-staged": {
     "**/*": "prettier -w -u"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
