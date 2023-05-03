@@ -4,6 +4,13 @@
   "projectType": "application",
   "sourceRoot": "packages/server/packages/logic/src",
   "targets": {
+    "run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "poetry run python src/index.py",
+        "cwd": "packages/server/packages/logic"
+      }
+    },
     "docs": {
       "executor": "nx:run-commands",
       "options": {

@@ -1,3 +1,5 @@
+def main():
+    print("This is for test")
 
-def hello():
-    return "Hello server-packages-logic"
+if __name__ == "__main__":
+  main()
